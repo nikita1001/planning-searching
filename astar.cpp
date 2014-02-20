@@ -34,15 +34,11 @@ while(!expandedSet.empty())
         }
     if (curr == goal)
     {
-        havePlanned = true;
         while(curr!=-1)
         {
             pathNodes.push_back(curr);
             curr=prev[curr];
         }
-        for (int i=pathNodes.size()-1;i>=0;i--)
-            plan.push_back(g.graphPoints[pathNodes[i]]);
-            break;
     }
     else
     {
