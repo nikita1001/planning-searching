@@ -1,11 +1,12 @@
-vector<int> evaluatedSet;
+// A* implementstion for a graph represented as a set of nodes (as a vector) and a set of edges (as a pair vector)
+vector<int> evaluatedSet; //included from the STL library
 vector<pair <int, float> > expandedSet;
 vector<float> h_value;
 vector<float> g_value;
 vector<float> f_value;
 vector<int> prev;
 vector<int> pathNodes;
-PxVec3 hDiff;
+PxVec3 hDiff; // requires the NVIDIA PhysX API to be included
 int curr, currPos;
 float minF;
 currentPlanStep = 0;
