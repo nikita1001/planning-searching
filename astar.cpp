@@ -6,11 +6,11 @@ vector<float> g_value;
 vector<float> f_value;
 vector<int> prev;
 vector<int> pathNodes;
-PxVec3 hDiff; // requires the NVIDIA PhysX API to be included
+PxVec3 hDiff; // requires the NVIDIA PhysX API
 int curr, currPos;
 float minF;
 currentPlanStep = 0;
-for (int i=0;i<g.graphPoints.size();i++)
+for (int i=0;i<g.graphPoints.size();i++) //the graphPoints are defined as 3D vectors (datatype adapted from NVIDIA)
 {
     hDiff= g.graphPoints[i]-(g.graphPoints[goal]);
     h_value.push_back(hDiff.magnitude());
