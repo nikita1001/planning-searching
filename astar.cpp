@@ -1,5 +1,5 @@
 // A* implementstion for a graph represented as a set of nodes (as a vector) and a set of edges (as a pair vector)
-vector<int> evaluatedSet; //included from the STL library
+vector<int> evaluatedSet; //vector datatype included from the STL library
 vector<pair <int, float> > expandedSet;
 vector<float> h_value;
 vector<float> g_value;
